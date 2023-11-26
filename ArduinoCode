@@ -1,0 +1,11 @@
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    int heartbeatRate = analogRead(A0); // Replace with actual pin
+    Serial.print("{'heartbeatRate': ");
+    Serial.print(heartbeatRate);
+    Serial.println("}");
+    delay(1000);
+}
